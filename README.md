@@ -10,7 +10,10 @@ CAM-H runs your CNC router from Windows with a real 3D view of your machine. Mov
 
 **[Download CAM-H for Windows](https://github.com/camh-cnc/cam-h/releases/latest/download/CAM-H-Setup.exe)** (Windows 10 / 11, 64-bit)
 
-Windows will say "Windows protected your PC" because the installer isn't signed yet: click **More info**, then **Run anyway**.
+The installer isn't signed yet, so expect two warnings the first time:
+
+1. **Your browser** may say *"CAM-H-Setup.exe isn't commonly downloaded"*. In Chrome: click the download, then **Keep** (or **Keep anyway**). In Edge: **...** next to the download, then **Keep**, then **Show more**, then **Keep anyway**.
+2. **Windows** may say *"Windows protected your PC"*. Click **More info**, then **Run anyway**.
 
 ## Free and licensed
 
