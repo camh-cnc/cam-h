@@ -2,7 +2,7 @@
 
 **Modern CNC control for Mach3 users moving to Grbl, grblHAL or FluidNC.**
 
-CAM-H runs your CNC router from Windows with a real 3D view of your machine. Moving off Mach3? It reads your Mach3 profile, writes the settings to your new board, and prints a wiring sheet for moving the wires across.
+CAM-H runs your CNC router or plasma table from Windows with a real 3D view of your machine. Moving off Mach3? It reads your Mach3 profile, writes the settings to your new board, and prints a wiring sheet for moving the wires across.
 
 **Status: free beta.** Expect gremlins, and please report them.
 
@@ -28,7 +28,9 @@ CAM-H's E-STOP button is software. Your machine must have a **hardware E-stop th
 
 Running G-code files, feed hold / resume / stop / E-STOP, jogging, homing, zeroing (G54), Go To Zero, MDI, feed / spindle / rapid overrides, manual tool changes (M6), and writing Mach3 settings to the board.
 
-Simulator-only for now: probing, tool setter, automatic tool changer, laser crosshair, warm-up, outline, surfacing, macros, plasma, the A axis, G55 to G59, and starting mid-program.
+**Plasma (new in 0.0.12, not yet proven on a real table: plasma testers wanted)** on grblHAL boards built with the plasma plugin: CAM-H touches off on the plate before every cut, sends your cut chart (pierce height, pierce delay, cut height, volts), and the board runs the pierce, arc OK and torch height control. A failed or lost arc stops the job with the torch out and offers to run again from that cut. Plain Grbl and FluidNC have no torch height control, so plasma needs grblHAL with the plugin.
+
+Simulator-only for now: probing, tool setter, automatic tool changer, laser crosshair, warm-up, outline, surfacing, macros, plasma Test IHS and laser to zero, the A axis, G55 to G59, and starting mid-program.
 
 ## Reporting a problem
 
